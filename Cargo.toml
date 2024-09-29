@@ -1,6 +1,24 @@
 [package]
 name = "tamarin"
+# When releasing to crates.io:
+# - Remove path dependencies
+# - Update doc url
+#   - README.md
+# - Update CHANGELOG.md.
+# - Create "v1.x.y" git tag.
 version = "0.1.0"
 edition = "2021"
+rust-version = "1.70"
+authors = ["Tamarin Contributors <team@tamarin.rs>"]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/ogghead/tamarin"
+homepage = "https://tamarin.rs"
+description = """
+A high-volume distributed event streaming service, built on the powerful Tokio runtime.
+"""
+categories = ["asynchronous", "network-programming"]
+keywords = ["io", "async", "non-blocking", "stream", "distributed"]
+
 
 [dependencies]
